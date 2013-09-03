@@ -86,7 +86,7 @@
             // set marker
             var location = model.getLocation();
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(location),
+                position: location,
                 title: model.get('Name')
             });
             marker.setMap(map);
