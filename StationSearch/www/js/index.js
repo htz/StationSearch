@@ -5,8 +5,8 @@
       views: {},
     };
     var apiVersion = 'v28.0';
-    var map, markers = [], current = new google.maps.LatLng(35.679799, 139.764545);
     var stations;
+    var map, markers = [], current = new google.maps.LatLng(35.679799, 139.764545);
 
     var toggleNavbar = function () {
       $('.navbar-toggle').trigger('click');
@@ -87,9 +87,8 @@
             var location = model.getLocation();
             var marker = new google.maps.Marker({
                 position: location,
-                title: model.get('Name')
+                map: map
             });
-            marker.setMap(map);
             markers.push(marker);
           });
           return this;

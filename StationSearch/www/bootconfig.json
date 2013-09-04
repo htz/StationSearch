@@ -1,7 +1,7 @@
 {
-    "remoteAccessConsumerKey": "3MVG9lKcPoNINVBLcgkFxyg4IZHYBInh9Rb4rjRlVgJNH6EGOe5tA8MTDANvtuB6fjzfA5gl9sPlto7PZUso2",
+    "remoteAccessConsumerKey": "3MVG9I1kFE5Iul2A2zeyU9MLnfKIecEIEHVj8.0jj7gVNPPrhHFESR_gRKXxQZJkCDKO0SbPtxuNjb.OaUFtr",
     "oauthRedirectURI": "sfdc:///success",
-    "oauthScopes": ["web", "api", "refresh_token"],
+    "oauthScopes": ["api", "refresh_token"],
     "isLocal": true,
     "startPage": "index.html",
     "errorPage": "error.html",
