@@ -58,7 +58,5 @@
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>
 
-    <access origin="*.force.com" />
-    <access origin="*.salesforce.com" />
     <access origin="*" />
 </cordova>
