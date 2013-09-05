@@ -1,13 +1,14 @@
 (function(w) {
   "use strict";
 
-  var _oauth = cordova.require('salesforce/plugin/oauth');
+  var _oauth;
   var _instance;
 
   var SalesforceOAuth = function (apiVersion) {
     if (_instance) {
       return _instance;
     }
+    _oauth = SalesforceOAuthPlugin;
     _instance = this;
     this.apiVersion = apiVersion || 'v28.0';
     return this;

@@ -1,0 +1,16 @@
+{
+  "name": "Station Search Debug",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Station Search Debug",
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://; object-src 'self'",
+  "app": {
+    "launch": {
+      "local_path": "debug.html"
+    }
+  }
+}

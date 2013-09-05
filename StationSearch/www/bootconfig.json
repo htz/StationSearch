@@ -1,6 +1,6 @@
 {
     "remoteAccessConsumerKey": "3MVG9I1kFE5Iul2A2zeyU9MLnfKIecEIEHVj8.0jj7gVNPPrhHFESR_gRKXxQZJkCDKO0SbPtxuNjb.OaUFtr",
-    "oauthRedirectURI": "sfdc:///success",
+    "oauthRedirectURI": "https://login.salesforce.com/services/oauth2/success",
     "oauthScopes": ["api", "refresh_token"],
     "isLocal": true,
     "startPage": "index.html",

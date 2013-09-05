@@ -79,7 +79,7 @@ if (forcetk.Client === undefined) {
         this.clientId = clientId;
         this.loginUrl = loginUrl || 'https://login.salesforce.com/';
         if (typeof proxyUrl === 'undefined' || proxyUrl === null) {
-            if (location.protocol === 'file:') {
+            if (location.protocol === 'file:' || location.protocol === 'chrome-extension:') {
                 // In Cordova
                 this.proxyUrl = null;
             } else {
@@ -324,7 +324,7 @@ if (forcetk.Client === undefined) {
                     xhr.setRequestHeader('SalesforceProxy-Endpoint', url);
                 }
                 xhr.setRequestHeader(that.authzHeader, "Bearer " + that.sessionId);
-                if (that.userAgentString !== null) {
+                if (that.userAgentString !== null && location.protocol !== 'chrome-extension:') {
                     xhr.setRequestHeader('User-Agent', that.userAgentString);
                     xhr.setRequestHeader('X-User-Agent', that.userAgentString);
                 }
