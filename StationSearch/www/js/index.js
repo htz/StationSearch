@@ -106,8 +106,6 @@
         if (href === '#map') {
           google.maps.event.trigger(map, 'resize');
           map.setCenter(current);
-        } else {
-          current = map.getCenter();
         }
         toggleNavbar();
       });
@@ -123,6 +121,9 @@
     var initMap = function () {
       map = new google.maps.Map($('#gmap')[0], {
           zoom: 14
+      });
+      google.maps.event.addListener(map, 'center_changed', function() {
+        current = map.getCenter();
       });
       // get current geolocation
       navigator.geolocation.getCurrentPosition(function (position) {
