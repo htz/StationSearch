@@ -8,10 +8,6 @@
     var stations;
     var map, markers = [], current = new google.maps.LatLng(35.679799, 139.764545);
 
-    var toggleNavbar = function () {
-      $('.navbar-toggle').trigger('click');
-    };
-
     var clearResult = function () {
       $('#stations tbody').empty();
       _.each(markers, function (marker) {
@@ -94,6 +90,12 @@
           return this;
         }
       });
+    };
+
+    var toggleNavbar = function () {
+      if ($('.navbar-toggle').is(':visible')) {
+        $('.navbar-toggle').trigger('click');
+      }
     };
 
     var initEvents = function () {
